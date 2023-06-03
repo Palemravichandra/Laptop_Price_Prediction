@@ -61,8 +61,7 @@ with col3:
     st.subheader(':violet[OS]')
     os = st.selectbox('OS',df['os'].unique())
     
-    submit=st.button('Predict Price')
-if submit:
+ if st.button('Predict Price'):
     # query
     ppi = None
     if touchscreen == 'Yes':
@@ -80,7 +79,5 @@ if submit:
     ppi = ((X_res**2) + (Y_res**2))**0.5/screen_size
     query = np.array([company,type,ram,weight,touchscreen,ips,ppi,cpu,hdd,ssd,gpu,os])
 
-    #new=pipe.predict(query)
-    #st.write(new[0])
+    query = query.reshape(1,12)
     st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
-
