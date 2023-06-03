@@ -60,8 +60,7 @@ with col3:
     # os
     st.subheader(':violet[OS]')
     os = st.selectbox('OS',df['os'].unique())
-    
- if st.button('Predict Price'):
+if st.button('Predict Price'):
     # query
     ppi = None
     if touchscreen == 'Yes':
