@@ -6,7 +6,7 @@ from xgboost import XGBRegressor
 
 # import the model
 pipe = pickle.load(open('lap_price.pkl','rb'))
-df = pickle.load(open('data.pkl','rb'))
+df = pd.read_csv('Laptop-data.csv')
 
 st.title("Laptop Predictor")
 
