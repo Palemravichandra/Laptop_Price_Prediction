@@ -80,7 +80,7 @@ if submit:
     ppi = ((X_res**2) + (Y_res**2))**0.5/screen_size
     query = np.array([company,type,ram,weight,touchscreen,ips,ppi,cpu,hdd,ssd,gpu,os])
 
-    new=pipe.predict(query)
-    st.write(new[0])
-    #st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
+    #new=pipe.predict(query)
+    #st.write(new[0])
+    st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
 
