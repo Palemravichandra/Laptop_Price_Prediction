@@ -7,7 +7,7 @@ from xgboost import XGBRegressor
 
 # import the model
 pipe = pickle.load(open('lap_price.pkl','rb'))
-df = pd.read_csv('Laptop-data.csv')
+df = pickle.load(open('df(2).pkl','rb'))
 
 st.title(":violet[LAPTOP PRICE PREDICTOR]")
 col1,col2,col3=st.columns(3)
