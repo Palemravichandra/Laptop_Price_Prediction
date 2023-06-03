@@ -6,7 +6,7 @@ import sklearn
 from xgboost import XGBRegressor
 
 # import the model
-pipe = pickle.load(open('lap_price.pkl','rb'))
+pipe = pickle.load(open('pipe.pkl','rb'))
 df = pickle.load(open('data_lap.pkl','rb'))
 
 st.title(":violet[LAPTOP PRICE PREDICTOR]")
