@@ -93,6 +93,7 @@ if predict:
     new = model.predict(y)
     st.write("### :green[The predicted price of this configuration is]"+" "+str(int(np.exp(new[0]))))
 
+st.write( f'<h5 style="color:rgb(0, 153, 153,0.35);">App Created by RAVI CHANDRA PALEM </h5>', unsafe_allow_html=True )
 
 
 
