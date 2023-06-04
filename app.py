@@ -64,7 +64,7 @@ with col2:
     cpu = st.selectbox(':violet[Select CPU]',df['Cpu brand'].unique())
     if cpu in cpu_brand:
         Cpu_brand = cpu_brand[cpu]
-
+    st.text(" ")
     # predict button
     predict=st.button('PREDICT PRICE')
 
