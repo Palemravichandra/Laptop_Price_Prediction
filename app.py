@@ -84,7 +84,7 @@ with col3:
 if predict:
     y = np.array([[Company, TypeName, Ram, Weight, Touchscreen, Ips, ppi,Cpu_brand, HDD, SSD, Gpu_brand, os]])
     new = model.predict(y)
-    st.write("### :green[The predicted price of this configuration is]"+" "+[str(int(np.exp(new[0])))])
+    st.write("### :green[The predicted price of this configuration is]"+" "+str(int(np.exp(new[0]))))
 
 
 
