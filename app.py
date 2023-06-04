@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 df=pd.read_csv('Laptop-data.csv')
-#forest = open('lap_price.pkl','rb')
-#model= pickle.load(forest)
+forest = open('lap_price.pkl','rb')
+model= pickle.load(forest)
 
 st.title(':blue[LAPTOP PRICE PREDICTION APP]')
 company={'Apple': 1.0, 'HP': 7.0, 'Acer': 0.0, 'Asus': 2.0, 'Dell': 4.0, 'Lenovo': 10.0, 'Chuwi': 3.0, 'MSI': 11.0, 'Microsoft': 13.0, 'Toshiba': 16.0, 'Huawei': 8.0, 'Xiaomi': 18.0, 'Vero': 17.0, 'Razer': 14.0, 'Mediacom': 12.0, 'Samsung': 15.0, 'Google': 6.0, 'Fujitsu': 5.0, 'LG': 9.0}
