@@ -39,7 +39,7 @@ with col1:
 
 with col2:
     # Touchscreen
-    touchscreen = st.selectbox(':violet[Touchscreen]', ['No', 'Yes'])
+    touchscreen = st.selectbox(':violet[Touch Screen]', ['No', 'Yes'])
     if touchscreen == 'Yes':
         Touchscreen = 1
     else:
