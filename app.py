@@ -65,6 +65,7 @@ with col2:
     if cpu in cpu_brand:
         Cpu_brand = cpu_brand[cpu]
     st.text(" ")
+    st.text(" ")
     # predict button
     predict=st.button('PREDICT PRICE')
 
